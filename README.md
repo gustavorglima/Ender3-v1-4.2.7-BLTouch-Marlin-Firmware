@@ -4,10 +4,6 @@ This repository contains customized configuration files for the Marlin 3D printe
 
 ## 🧩 How to Use with Marlin Firmware Auto Build (VSCode Extension)
 
-This project is intended to be used with the **Marlin Firmware Auto Build** extension for VSCode, which simplifies compiling and uploading firmware to your printer.
-
-### 🔧 Steps
-
 1. **Download Marlin 2.1.2.5**
    - Visit: [https://github.com/MarlinFirmware/Marlin/releases/tag/2.1.2.5](https://github.com/MarlinFirmware/Marlin/releases/tag/2.1.2.5)
    - Download the `Source code (zip)` and extract it.
@@ -18,15 +14,25 @@ This project is intended to be used with the **Marlin Firmware Auto Build** exte
 
 3. **Open VSCode**
    - Open the Marlin root folder in VSCode.
-   - Make sure the [PlatformIO extension](https://platformio.org/platformio-ide) is installed.
-   - Install the **Marlin Firmware Auto Build** extension from the VSCode Marketplace.
+   - Install the [PlatformIO](https://platformio.org/platformio-ide) extension from the VSCode Marketplace.
+   - Install the [Auto Build Marlin](https://marketplace.visualstudio.com/items?itemName=MarlinFirmware.auto-build) extension from the VSCode Marketplace.
+
 
 4. **Build & Upload**
-   - In the VSCode sidebar, click the **Marlin Auto Build** icon.
+   - In the VSCode sidebar, click the **Auto Build Marlin** icon.
    - Select:
      - **Environment**: `STM32F103RE_creality`
      - **Action**: Build or Upload
    - Monitor the progress and wait for the confirmation.
+
+5. **Flash the Firmware**
+   - After building, the compiled firmware file will be located at:
+     ```
+     .pio/build/STM32F103RE_creality/firmware.bin
+     ```
+   - Copy the file to the root directory of a **microSD card** (formatted as FAT32).
+   - Power off the printer, insert the card, and power it back on.
+   - The printer will automatically flash the new firmware and delete the file from the SD card once complete.
 
 ### 🖨️ Target Hardware
 
