@@ -1,4 +1,4 @@
-# Configure Marlin 2.1.2.5 for Ender 3 v1 — Creality v4.2.7 with BLTouch
+# Configure Marlin 2.1.2.5 for Ender 3 v1 with Creality v4.2.7 board and BLTouch
 
 This repository contains customized configuration files for the Marlin 3D printer firmware.
 
@@ -47,5 +47,17 @@ This repository contains customized configuration files for the Marlin 3D printe
 - To view the official default configuration for the Ender 3 (Marlin 2.1.2.5), visit:  
   [Official Marlin Ender 3 config](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.5/config/examples/Creality/Ender-3)
 
----
-Only configuration and branding files are tracked in this repository. All core Marlin source files are excluded via `.gitignore`.
+### 📦 Precompiled Firmware
+
+If you don't want to compile the firmware yourself, you can download the precompiled binary:
+
+- **[Download firmware-Marlin-2.1.2.5-Ender3-v1-Creality-v4.2.7-BLTouch.bin](./firmware-Marlin-2.1.2.5-Ender3-v1-Creality-v4.2.7-BLTouch.bin)**
+
+**How to install:**
+1. Format a microSD card as FAT32.
+2. Copy the `.bin` file to the root of the card.
+3. Power off your Ender 3.
+4. Insert the card into the printer.
+5. Power the printer back on.
+6. Wait for it to flash — the screen will stay blank for a few seconds, then boot normally.
+7. The file will be automatically deleted after a successful flash.
