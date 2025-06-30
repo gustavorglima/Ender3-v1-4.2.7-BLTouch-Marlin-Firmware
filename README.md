@@ -2,7 +2,14 @@
 
 This repository contains customized configuration files for the Marlin 3D printer firmware.
 
-## 🧩 How to Use with Marlin Firmware Auto Build (VSCode Extension)
+### 🖨️ Target Hardware
+
+- **Printer**: Creality Ender 3 v1
+- **Board**: Creality V4.2.7 (STM32F103RE)
+- **Sensor**: BLTouch
+- **Firmware**: Marlin 2.1.2.5
+
+## 🧩 How to Build
 
 1. **Download Marlin 2.1.2.5**
    - Visit: [https://github.com/MarlinFirmware/Marlin/releases/tag/2.1.2.5](https://github.com/MarlinFirmware/Marlin/releases/tag/2.1.2.5)
@@ -34,13 +41,6 @@ This repository contains customized configuration files for the Marlin 3D printe
    - Power off the printer, insert the card, and power it back on.
    - The printer will automatically flash the new firmware and delete the file from the SD card once complete.
 
-
-### 🖨️ Target Hardware
-
-- **Printer**: Creality Ender 3 v1
-- **Board**: Creality V4.2.7 (STM32F103RE)
-- **Sensor**: BLTouch
-- **Firmware**: Marlin 2.1.2.5
 
 ### 📚 Reference
 
