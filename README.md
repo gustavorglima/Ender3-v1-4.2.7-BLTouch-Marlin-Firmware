@@ -34,12 +34,18 @@ This repository contains customized configuration files for the Marlin 3D printe
    - Power off the printer, insert the card, and power it back on.
    - The printer will automatically flash the new firmware and delete the file from the SD card once complete.
 
+
 ### 🖨️ Target Hardware
 
 - **Printer**: Creality Ender 3 v1
 - **Board**: Creality V4.2.7 (STM32F103RE)
 - **Sensor**: BLTouch
 - **Firmware**: Marlin 2.1.2.5
+
+### 📚 Reference
+
+- To view the official default configuration for the Ender 3 (Marlin 2.1.2.5), visit:  
+  [Official Marlin Ender 3 config](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.5/config/examples/Creality/Ender-3)
 
 ---
 Only configuration and branding files are tracked in this repository. All core Marlin source files are excluded via `.gitignore`.
