@@ -35,14 +35,13 @@ Se você não quiser compilar o firmware por conta própria, pode baixar o biná
 5. Ligue a impressora novamente.
 6. Aguarde o processo de flash — a tela ficará em branco por alguns segundos e depois ligará normalmente.
 
-Após o flash do firmware, [calibre o Z-offset e o nivelamento da mesa](#calibracao-do-z-offset-e-nivelamento-automatico-da-mesa-bltouch).
+Após o flash do firmware, [calibre o Z-offset e o nivelamento da mesa](#-calibracao-do-z-offset-e-nivelamento-automatico-da-mesa-bltouch).
 
 ## 🔧 Calibracao do Z-Offset e Nivelamento Automatico da Mesa (BLTouch)
 
 Após o flash do firmware, é importante calibrar o Z-offset e a malha de nivelamento da mesa. Siga os passos abaixo para configurar corretamente o BLTouch e garantir impressões niveladas:
 
 1. **Inicialize a EEPROM e ajuste de origem da cama**  
-   Envie os seguintes comandos:
    ```
    M502 ; Restaura os valores padrão do firmware
    M500 ; Salva os padrões na EEPROM
@@ -181,11 +180,6 @@ Antes de compilar o firmware, edite os seguintes parâmetros no arquivo `Configu
    #define NOZZLE_TO_PROBE_OFFSET { -46, -5, 0 }
    ```
    A ponta do BLTouch está 46 mm à esquerda (eixo X negativo) e 5 mm à frente (eixo Y positivo) da ponta da extrusora. Deixe o terceiro valor como `0` — ele será ajustado manualmente depois.
-
-   <p align="center">
-      <img src="img/bl-touch.png" alt="Ilustração do NOZZLE_TO_PROBE_OFFSET" width="500"/>
-   </p>
-   <p align="center"><em>Figura: Distância entre o bico e o BLTouch</em></p>
 
 2. **Defina o tamanho da mesa com margem de segurança**  
    Apesar da mesa ter 235mm, é recomendável configurar:
